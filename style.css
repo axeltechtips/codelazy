@@ -8,7 +8,7 @@
 
     --anim-speed: 2s;
 
-    --max-w: 1300px;
+    --max-w: 100vh;
 
     --fs0: 9px;
     --fs1: 14px;
@@ -59,39 +59,21 @@ body {
     background-color: var(--black);
 }
 
-#truth-button {
-    position: fixed;
-    bottom:-10px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: var(--fs0);
-    padding: 1px 0px;
-    border: none;   
-    background-color: var(--black);
-    color: black;
-}
-
-#truth-button:hover {
-    position: fixed;
-    bottom:-10px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: var(--fs0);
-    padding: 10px 0px;
-    border: none;
-    background-color: var(--black);
-    color: white;
-}
-
 #hidden-text {
     font-family: "open sans", "Courier New", Courier, monospace;
     /* font-weight: bold; */
     font-style: italic;
+    text-align: justify;
+    text-align-last: justify;
     display: none;
     color: white;
     font-size: var(--fs1);
     max-width: var(--max-w);
     animation: fade-in var(--anim-speed) ease-in-out forwards;
+}
+
+.no-justify {
+    display: inline-block;
 }
 
 #hidden-text::selection {
@@ -128,4 +110,3 @@ body {
         scroll-behavior: auto !important;
     }
 }
-
